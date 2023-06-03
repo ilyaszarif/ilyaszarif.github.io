@@ -1,0 +1,60 @@
+---
+title: "Publications"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
+library(htmltools)
+library(dplyr)
+library(readr)
+
+pub.data <- read_csv("data/academic_dataset.csv") |> 
+  filter(status == "Published")
+
+years <- unique(pub.data$year) |> sort(decreasing = TRUE)
+
+for (k in years) {
+  cat(paste0(h2(k)))
+
+  pub.in <- pub.data |> 
+    filter(year == k) |> 
+    arrange(type_of_publication)
+
+  for (type in unique(pub.in$type_of_publication)) {
+    cat(paste0(h4(type)))
+
+    pub.k <- pub.in |> filter(type_of_publication == type)
+
+    for (i in 1:nrow(pub.k)) {
+      authors <- pub.k$authors[i]
+      authors <- strsplit(authors, ", ")[[1]]  # Extract the first element of the list
+
+      bold_authors <- lapply(authors, function(author) {
+        if (grepl("Ilyas, M.", author)) {
+          tags$b(author)
+        } else {
+          author
+        }
+      })
+
+      cat(paste0(
+        div(
+          paste0(bold_authors, collapse = ", "), 
+          paste0("(", pub.k$year[i], ") "),
+          tags$b(pub.k$title[i]),
+          tags$i(pub.k$item_info[i]),
+          tags$a(pub.k$url_text[i], href = pub.k$url_text[i])
+        )
+      ))
+    }
+  }
+
+  cat(paste0(br(), br()))
+}
+
+```
