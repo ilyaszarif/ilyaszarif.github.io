@@ -36,7 +36,7 @@ website:
         href: mailto:mi335@exeter.ac.uk
   page-footer: 
     background: light
-    left: Copyright 2023, Muhammad Ilyas
+    left: ©️ 2023, Muhammad Ilyas
     right: Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
 format:
   html:
