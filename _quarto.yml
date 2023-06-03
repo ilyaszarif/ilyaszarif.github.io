@@ -37,7 +37,7 @@ website:
   page-footer: 
     background: light
     left: Copyright 2023, Muhammad Ilyas
-    right: This website is built with [Quarto](https://quarto.org/)
+    right: Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
 format:
   html:
     page-layout: full
