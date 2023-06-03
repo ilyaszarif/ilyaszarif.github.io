@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "ilyaszarif.github.io"
+  title: "Data for Life..!"
   navbar:
     left:
       - href: index.qmd
