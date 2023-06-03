@@ -25,12 +25,7 @@ about:
 I'm Muhammad Ilyas. I love to utilize data for understanding the dynamics of living world. My education has trained me in both Ecology and Data Science!
 <!-- ::: -->
 
-<html>
-<head>
-  <title>Twitter Timeline</title>
-</head>
-<body>
+<!-- ::: {.small-text} -->
   <a class="twitter-timeline" href="https://twitter.com/himalayan_lynx?ref_src=twsrc%5Etfw">Tweets by himalayan_lynx</a>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</body>
-</html>
+<!-- ::: -->
