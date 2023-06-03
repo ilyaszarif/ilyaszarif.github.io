@@ -1,9 +1,26 @@
 ---
-title: "ilyaszarif.github.io"
+title: ""
+image: images/ilyas.jpg
+toc: false
 about: 
   template: jolla
+  image-shape: round
+  image-width: 16em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/himalayan_lynx
+    - icon: github
+      text: GitHub
+      href: https://github.com/ilyaszarif
+    - icon: envelope
+      text: Email
+      href: mailto:mi335@exeter.ac.uk
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<!-- ::: {.small-text} -->
+I'm Muhammad Ilyas. I love to utilize data for understanding the dynamics of living world. My education has trained me in both Ecology and Data Science!
+<!-- ::: -->

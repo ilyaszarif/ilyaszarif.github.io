@@ -3,15 +3,42 @@ project:
   output-dir: docs
 
 website:
+  site-url: https://ilyaszarif.github.io
+  open-graph: true
+  twitter-card: 
+    creator: "@himalayan_lynx"
   title: "Data for Life..!"
   navbar:
-    left:
+    title: false
+    logo: images/logo/logo.png
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
-
+      - href: publications.qmd
+        text: Publications
+      - href: CV/Ilyas_Muhammad_CV.pdf
+        text: CV
+      - icon: github
+        href: https://github.com/ilyaszarif/ilyaszarif.github.io
+      - icon: twitter
+        href: https://twitter.com/himalayan_lynx
+      - icon: linkedin
+        href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
+      - text: "{{< ai researchgate >}}"
+        href: https://www.researchgate.net/profile/Muhammad-Ilyas-6
+      - text: "{{< ai orcid >}}"
+        href: https://orcid.org/0000-0002-9418-5442
+      - icon: envelope
+        href: mailto:mi335@exeter.ac.uk
+  page-footer: 
+    background: light
+    left: Copyright 2023, Muhammad Ilyas
+    right: This website is built with [Quarto](https://quarto.org/)
 format:
   html:
+    page-layout: full
+    sidebar: false
     theme: cosmo
     css: styles.css
     toc: true
