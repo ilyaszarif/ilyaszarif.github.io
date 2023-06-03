@@ -7,6 +7,9 @@ website:
   open-graph: true
   twitter-card: 
     creator: "@himalayan_lynx"
+  google-analytics:
+    tracking-id: "G-9NCY9ZV6Z8"
+    anonymize-ip: true
   title: "Data for Life..!"
   navbar:
     title: false
