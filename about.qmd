@@ -17,5 +17,3 @@ knitr::include_graphics("images/astore-2018.jpg")
 Astore Camera Trapping November 2018.
 :::
 :::
-
-<a class="twitter-timeline" href="https://twitter.com/himalayan_lynx?ref_src=twsrc%5Etfw">Tweets by himalayan_lynx</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
