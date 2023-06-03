@@ -42,6 +42,7 @@ format:
   html:
     page-layout: full
     sidebar: false
+    smooth-scroll: true
     theme: cosmo
     css: styles.css
     toc: true
