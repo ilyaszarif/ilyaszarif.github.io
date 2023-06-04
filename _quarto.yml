@@ -20,8 +20,7 @@ website:
       - about.qmd
       - href: publications.qmd
         text: Publications
-      - href: CV/Ilyas_Muhammad_CV.pdf
-        text: CV
+
       - icon: github
         href: https://github.com/ilyaszarif/ilyaszarif.github.io
       - text: "{{< ai twitter >}}"
