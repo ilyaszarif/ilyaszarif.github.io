@@ -24,7 +24,7 @@ website:
         text: CV
       - icon: github
         href: https://github.com/ilyaszarif/ilyaszarif.github.io
-      - icon: twitter
+      - text: "{{< ai twitter >}}"
         href: https://twitter.com/himalayan_lynx
       - icon: linkedin
         href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
