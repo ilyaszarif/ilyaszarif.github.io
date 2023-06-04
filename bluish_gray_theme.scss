@@ -1,0 +1,199 @@
+/*-- scss:defaults --*/
+
+// Import fonts (define mainfont in _quarto.yml)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+// Colors
+$light-sage-green: #c4cdd5;
+$dark-sage-green: #000000;
+$cream: #d4dbe6;
+$dark-gray: #000000;
+$gray: #000000;
+$light-gray: #000000;
+$purple:  #556B2F;
+$black: #000000;
+$burnt-orange: #ad7237;
+
+// Base document colors
+$navbar-bg: $cream;
+$navbar-fg: $dark-sage-green; 
+$navbar-hl: $purple; 
+$body-bg: $light-sage-green;
+$body-color: $gray;
+$footer-bg: $cream; 
+$link-color: $purple;
+
+// Inline code
+$code-bg: $cream;
+$code-color: $burnt-orange; //$purple; 
+
+// Code blocks
+$code-block-bg: $cream;
+
+/*-- scss:rules --*/
+
+/* ELEMENT SELECTORS */
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: $gray;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+body {
+  line-height: 1.5; // min 1.5 suggested for assistive tech
+  font-size: 19.5px;
+}
+
+/* CLASS SELECTORS (self-defined) */
+
+.custom-subtitle {
+  font-size: 22px;
+  margin-bottom: 0.15em;
+}
+
+.custom-subtitle2 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.large-text {
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 17px;
+}
+
+.extra-small-text{
+  font-size: 14px;  
+}
+
+.topbr {
+    display: block;
+    margin-top: 1em;
+}
+
+.center-text {
+  text-align: center;
+  left: 50%;
+}
+
+.dark-gray-text{
+  color: $dark-gray;
+}
+
+/*.container {
+  display: flex;
+}*/
+
+.container { // for centering buttons
+  height: 20px;
+  position: relative;
+}
+
+.center { // for centering buttons
+  //width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button-styling {
+  background: $light-sage-green;
+  border-color: $gray;
+  color: $gray;
+  border-radius: 0.6rem;
+  border-width: thin;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  transition-duration: 0.4s;
+}
+
+.button-styling:hover {
+  background-color: $cream; 
+}
+
+// Example from Meghan Hall
+/* .btn-primary {
+  color: $gray;
+  background-color: $light-sage-green;
+  border: 1px solid $gray;
+  width: 25%;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 0px 2px;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #978e83;
+  border-color: white;
+}
+
+.btn-primary:focus {
+  color: #ffffff;
+  background-color: #978e83;
+  border-color: white;
+} */
+
+.gray-italic {
+  color: $gray;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.quote-text-bg {
+  background-color: rgba(166, 164, 161, 0.4);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 8px;
+  border-radius: 15px;
+}
+
+/* CLASS SELECTORS (copied from inspecting site -- Quarto defined?) */
+
+.navbar-brand img { // see https://github.com/robertmitchellv/robertmitchellv.github.io/blob/main/custom-dark.scss
+  max-height: 60px;
+  width: auto;
+}
+
+.rounded { // headshot shape
+    border-radius: 50px 20px 50px 20px !important;
+}
+
+.about-link-text { // button text size (landing page)
+  font-size: 18px;
+}
+
+.bi { // button icon size (landing page)
+  font-size: 18px;
+}
+
+.card {
+  background-color: $cream;
+  //border-radius: 5.25em;
+}
+
+/* .card-attribution {
+  //padding-top: 5em;
+  padding-bottom: 3em;
+} */
+
+.description {
+  font-size: 25px;
+}
