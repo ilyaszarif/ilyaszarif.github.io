@@ -21,11 +21,11 @@ website:
       - href: publications.qmd
         text: Publications
 
-      - icon: github
+      - text: "{{< fa brands github >}}"
         href: https://github.com/ilyaszarif/ilyaszarif.github.io
-      - icon: twitter
+      - text: "{{< fa brands twitter >}}"
         href: https://twitter.com/himalayan_lynx
-      - icon: linkedin
+      - text: "{{< fa brands linkedin >}}"
         href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
       - text: "{{< ai researchgate >}}"
         href: https://www.researchgate.net/profile/Muhammad-Ilyas-6
