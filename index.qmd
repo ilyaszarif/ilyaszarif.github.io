@@ -12,18 +12,18 @@ about:
 
 I'm Muhammad Ilyas and I have a passion for using data to gain insights into the complexities of the natural world. I have received an education in both Ecology and Data Science, equipping me with the necessary skills to bridge these two fields. <!-- ::: -->
 
-#### **Education**
+#### {{< fa graduation-cap >}} **Education**
 
 ***MSc Applied Data Science*** in Ecology and Evolution \| 2023
-**University of Exeter** \| England, UK
+{{< fa university >}} **University of Exeter** \| England, UK
 
 ***MPhil*** in Wildlife Ecology \| 2020
-**Quaid-i-Azam University Islamabd** \| Islamabad, Pakistan
+{{< fa university >}} **Quaid-i-Azam University Islamabd** \| Islamabad, Pakistan
 
 ***BS*** in Zoology \| 2017
-**Islamia College Peshawar** \| Peshawar, Pakistan
+{{< fa university >}} **Islamia College Peshawar** \| Peshawar, Pakistan
 
-#### **Research Experience**
+####  {{< fa industry >}} **Research Experience**
 
 *Research Associate* \| 04.2021--06-2021 
 **Snow Leopard Foundation Pakistan** \| Islamabad, Pakistan 
