@@ -13,7 +13,7 @@ website:
   title: "Data for Life..!"
   navbar:
     title: false
-    logo: images/logo/logo.png
+    #logo: images/logo/logo.png
     right:
       - href: index.qmd
         text: Home
@@ -45,8 +45,9 @@ format:
     theme: 
      - bluish_gray_theme.scss
    # css: styles.css
-    mainfont: Nunito
+    #mainfont: Nunito
     toc: true
+    include-in-header: logo.html
 
 
 

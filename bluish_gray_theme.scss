@@ -1,7 +1,11 @@
 /*-- scss:defaults --*/
 
 // Import fonts (define mainfont in _quarto.yml)
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Oleo+Script&family=Great+Vibes:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+//font
+$font-family-base: 'Source Sans Pro',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular' !default;
+$headings-font-family: 'Great Vibes', 'Oleo Script', 'Prata', 'Roboto', 'Playfair Display', 'Montserrat' !default;
 
 // Colors
 $light-sage-green: #c4cdd5;
@@ -196,4 +200,33 @@ body {
 
 .description {
   font-size: 25px;
+}
+
+
+/*--scss:rules--*/
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    font-family: "Great Vibes", $headings-font-family;
+    font-size: $font-size-base * 1.5;
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title .title {
+    margin-bottom: 0;
+    font-family: "Oleo Script",
+}
+em {
+    font-style: italic;
+    font-family: "Oleo-Script", $font-family-base;
+}
+.navbar-dark .navbar-brand {
+    font-family: "Oleo-Script";
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Prata";
+    font-weight: 500;
+    line-height: 1.2;
 }
