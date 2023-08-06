@@ -23,7 +23,7 @@ website:
 
       - text: "{{< fa brands github >}}"
         href: https://github.com/ilyaszarif/ilyaszarif.github.io
-      - text: "{{< fa brands x-twitter >}}"
+      - text: "{{< fa brands twitter >}}"
         href: https://twitter.com/himalayan_lynx
       - text: "{{< fa brands linkedin >}}"
         href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
