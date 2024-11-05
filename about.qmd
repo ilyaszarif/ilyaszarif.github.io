@@ -20,13 +20,3 @@ Astore Camera Trapping November 2018.
 :::
 :::
 
-I am active on Twitter and regularly re-tweet PhD opportunities relevant to Ecology and Evolution; occasionally for other subjects too.
-
-<!-- ::: {.small-text} -->
-
-<a class="twitter-timeline" href="https://twitter.com/himalayan_lynx?ref_src=twsrc%5Etfw">Tweets by himalayan_lynx</a>
-
-```{=html}
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-```
-<!-- ::: -->
