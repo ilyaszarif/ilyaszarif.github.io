@@ -14,6 +14,12 @@ I'm Muhammad Ilyas and I'm passionate about using data to gain insights into the
 
 #### {{< fa graduation-cap >}} **Education**
 
+***PhD*** in Macroecology and Biodiversity Conservation \| 2024-2028
+{{< fa university >}} **University of Copenhagen** \| Copenhagen, Denmark
+
+***PhD*** in Macroecology and Biodiversity Conservation \| 2024-2028
+{{< fa university >}} **University of Adelaide** \| Adelaide, Australia
+
 ***MSc Applied Data Science*** in Ecology and Evolution \| 2023
 {{< fa university >}} **University of Exeter** \| England, UK
 
