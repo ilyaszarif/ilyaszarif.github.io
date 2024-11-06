@@ -13,30 +13,32 @@ library(htmltools)
 library(dplyr)
 library(readr)
 
-pub.data <- read_csv("data/academic_dataset.csv") |> 
+pub.data <- read_csv("data/academic_dataset.csv") %>%
   filter(status == "Published")
 
-years <- unique(pub.data$year) |> sort(decreasing = TRUE)
+years <- unique(pub.data$year) %>%
+  sort(decreasing = TRUE)
 
 for (k in years) {
   cat(paste0(h2(k)))
 
-  pub.in <- pub.data |> 
-    filter(year == k) |> 
+  pub.in <- pub.data %>%
+    filter(year == k) %>%
     arrange(type_of_publication)
 
   for (type in unique(pub.in$type_of_publication)) {
     cat(paste0(h4(type)))
 
-    pub.k <- pub.in |> filter(type_of_publication == type)
+    pub.k <- pub.in %>%
+      filter(type_of_publication == type)
 
     for (i in 1:nrow(pub.k)) {
       authors <- pub.k$authors[i]
-      authors <- strsplit(authors, ", ")[[1]]  # Extract the first element of the list
+      authors <- strsplit(authors, ",")[[1]]
 
       bold_authors <- lapply(authors, function(author) {
-        if (grepl("Ilyas, M.", author)) {
-          tags$b(author)
+        if (author == "Ilyas M.") {
+          tags$strong(author)
         } else {
           author
         }
@@ -44,7 +46,7 @@ for (k in years) {
 
       cat(paste0(
         div(
-          paste0(bold_authors, collapse = ", "), 
+          do.call(paste0, c(bold_authors, collapse = ", ")),
           paste0("(", pub.k$year[i], ") "),
           tags$b(pub.k$title[i]),
           tags$i(pub.k$item_info[i]),
@@ -56,5 +58,4 @@ for (k in years) {
 
   cat(paste0(br(), br()))
 }
-
 ```

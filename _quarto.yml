@@ -17,22 +17,23 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: My Academic Identity
       - href: publications.qmd
         text: Publications
 
       - text: "{{< fa brands github >}}"
         href: https://github.com/ilyaszarif/ilyaszarif.github.io
       - text: "{{< fa brands twitter >}}"
-        href: https://twitter.com/himalayan_lynx
+        href: https://x.com/himalayan_lynx
       - text: "{{< fa brands linkedin >}}"
         href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
-      - text: "{{< ai researchgate >}}"
+      - text: "{{< fa brands researchgate >}}"
         href: https://www.researchgate.net/profile/Muhammad-Ilyas-6
-      - text: "{{< ai orcid >}}"
+      - text: "{{< fa brands orcid >}}"
         href: https://orcid.org/0000-0002-9418-5442
       - icon: envelope
-        href: mailto:mi335@exeter.ac.uk
+        href: mailto:ilyaszarif@gmail.com
   page-footer: 
     background: light
     left: ©️ 2023, Muhammad Ilyas
