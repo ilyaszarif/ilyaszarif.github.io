@@ -43,7 +43,7 @@ format:
     sidebar: false
     smooth-scroll: true
     theme: 
-     - bluish_gray_theme.scss
+     - green_theme.scss
    # css: styles.css
     #mainfont: Nunito
     toc: true

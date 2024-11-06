@@ -10,7 +10,7 @@ $headings-font-family: 'Great Vibes', 'Oleo Script', 'Prata', 'Roboto', 'Playfai
 // Colors
 $light-sage-green: #82b3bb;
 $dark-sage-green: #029670;
-$cream: #005c3c;
+$green: #005c3c;
 $dark-gray: #000000;
 $gray: #000000;
 $light-gray: #000000;
@@ -19,20 +19,20 @@ $black: #000000;
 $burnt-orange: #ad7237;
 
 // Base document colors
-$navbar-bg: $cream;
+$navbar-bg: $green;
 $navbar-fg: $dark-sage-green; 
 $navbar-hl: $purple; 
 $body-bg: $light-sage-green;
 $body-color: $gray;
-$footer-bg: $cream; 
+$footer-bg: $green; 
 $link-color: $purple;
 
 // Inline code
-$code-bg: $cream;
+$code-bg: $green;
 $code-color: $burnt-orange; //$purple; 
 
 // Code blocks
-$code-block-bg: $cream;
+$code-block-bg: $green;
 
 /*-- scss:rules --*/
 
@@ -126,7 +126,7 @@ body {
 }
 
 .button-styling:hover {
-  background-color: $cream; 
+  background-color: $green; 
 }
 
 // Example from Meghan Hall
@@ -189,7 +189,7 @@ body {
 }
 
 .card {
-  background-color: $cream;
+  background-color: $green;
   //border-radius: 5.25em;
 }
 
