@@ -36,7 +36,7 @@ website:
         href: mailto:ilyaszarif@gmail.com
   page-footer: 
     background: light
-    left: ©️ 2023, Muhammad Ilyas
+    left: ©️ 2025, Muhammad Ilyas
     right: Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
 format:
   html:

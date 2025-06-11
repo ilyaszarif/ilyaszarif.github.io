@@ -1,7 +1,7 @@
 ---
 title: "Navigating the Academic Landscape"
 ---
-I started my joint PhD on November 04, 2024 between [University of Copenhagen](https://www.ku.dk/en) and [University of Adelaide](https://www.adelaide.edu.au/) under the supervision of [Professsor Carsten Rahbek](https://researchprofiles.ku.dk/da/persons/carsten-rahbek) and [Associate Professor Damien Fordham](https://researchers.adelaide.edu.au/profile/damien.fordham). The research will try to investigate recovery of large bodied herbivores and their ecosystem services using process-based models. 
+I started my joint PhD on November 04, 2024 between [University of Copenhagen](https://www.ku.dk/en) and [University of Adelaide](https://www.adelaide.edu.au/) under the supervision of [Professsor Carsten Rahbek](https://researchprofiles.ku.dk/da/persons/carsten-rahbek) and [Associate Professor Damien Fordham](https://researchers.adelaide.edu.au/profile/damien.fordham). I will try to investigate the pre-European distribution of Australian digging marsupials and the loss of their ecological functions due to extinctions and range contractions.
 
 I have my second masters [MSc Applied Data Science (Ecology and Evolution)](https://www.exeter.ac.uk/study/postgraduate/courses/mathematics/appdataeco/) at [University of Exeter](https://exeter.ac.uk/) Penryn Campus, Cornwall England. I did my dissertation project on Differential Gene Expression in Japanese Quails, under the supervision of [Dr Bram Kuijper](https://biosciences.exeter.ac.uk/staff/profile/index.php?web_id=Bram_Kuijper).
 

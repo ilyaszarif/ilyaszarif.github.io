@@ -10,7 +10,7 @@ about:
 
 <!-- ::: {.small-text} -->
 
-I'm Muhammad Ilyas and I'm passionate about using data to gain insights into the complexities of the natural world. I have received an education in both Ecology and Data Science, equipping me with the necessary skills to bridge these two fields. <!-- ::: -->
+I'm Muhammad Ilyas and I use data and models to gain insights into the complexities of the natural world. I have received an education in both Ecology and Data Science, equipping me with the necessary skills to bridge these two fields. <!-- ::: -->
 
 #### {{< fa graduation-cap >}} **Education**
 

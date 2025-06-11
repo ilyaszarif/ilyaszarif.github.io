@@ -12,50 +12,64 @@ knitr::opts_chunk$set(echo = TRUE)
 library(htmltools)
 library(dplyr)
 library(readr)
+library(stringr)
 
+# Load and filter data
 pub.data <- read_csv("data/academic_dataset.csv") %>%
   filter(status == "Published")
 
-years <- unique(pub.data$year) %>%
-  sort(decreasing = TRUE)
+years <- sort(unique(pub.data$year), decreasing = TRUE)
 
 for (k in years) {
-  cat(paste0(h2(k)))
+  cat(as.character(tags$h2(k)))
+  
+  pub.year <- pub.data %>% filter(year == k)
+  
+  for (type in unique(pub.year$type_of_publication)) {
+    cat(as.character(tags$h4(type)))
+    
+    pub.type <- pub.year %>% filter(type_of_publication == type)
+    
+    for (i in 1:nrow(pub.type)) {
+      # Split authors and trim whitespace
+      parts <- str_split(pub.type$authors[i], ",")[[1]] %>% str_trim()
 
-  pub.in <- pub.data %>%
-    filter(year == k) %>%
-    arrange(type_of_publication)
+      # Recombine into name pairs: "Lastname, Initial"
+      full_authors <- c()
+      for (j in seq(1, length(parts), by = 2)) {
+        if (j + 1 <= length(parts)) {
+          full_authors <- c(full_authors, paste0(parts[j], ", ", parts[j + 1]))
+        } else {
+          full_authors <- c(full_authors, parts[j])  # catch odd number edge case
+        }
+      }
 
-  for (type in unique(pub.in$type_of_publication)) {
-    cat(paste0(h4(type)))
-
-    pub.k <- pub.in %>%
-      filter(type_of_publication == type)
-
-    for (i in 1:nrow(pub.k)) {
-      authors <- pub.k$authors[i]
-      authors <- strsplit(authors, ",")[[1]]
-
-      bold_authors <- lapply(authors, function(author) {
-        if (author == "Ilyas M.") {
-          tags$strong(author)
+      # Bold "Ilyas, M." only
+      formatted_authors <- lapply(full_authors, function(author) {
+        if (author == "Ilyas, M.") {
+          as.character(tags$strong(author))
         } else {
           author
         }
       })
 
-      cat(paste0(
-        div(
-          do.call(paste0, c(bold_authors, collapse = ", ")),
-          paste0("(", pub.k$year[i], ") "),
-          tags$b(pub.k$title[i]),
-          tags$i(pub.k$item_info[i]),
-          tags$a(pub.k$url_text[i], href = pub.k$url_text[i])
+      author_line <- HTML(paste(formatted_authors, collapse = ", "))
+
+      pub_entry <- tagList(
+        tags$p(
+          author_line,
+          paste0(" (", pub.type$year[i], ") "),
+          tags$b(pub.type$title[i]),
+          ". ",
+          tags$i(pub.type$item_info[i]),
+          if (!is.na(pub.type$url_text[i]) && pub.type$url_text[i] != "") {
+            tagList(" ", tags$a(href = pub.type$url_text[i], pub.type$url_text[i]))
+          }
         )
-      ))
+      )
+      
+      cat(as.character(pub_entry))
     }
   }
-
-  cat(paste0(br(), br()))
 }
 ```
