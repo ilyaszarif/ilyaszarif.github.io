@@ -5,8 +5,6 @@ project:
 website:
   site-url: https://ilyaszarif.github.io
   open-graph: true
-  twitter-card: 
-    creator: "@himalayan_lynx"
   google-analytics:
     tracking-id: "G-9NCY9ZV6Z8"
     anonymize-ip: true
@@ -24,7 +22,7 @@ website:
 
       - text: "{{< fa brands github >}}"
         href: https://github.com/ilyaszarif/ilyaszarif.github.io
-      - text: "{{< fa brands twitter >}}"
+      - text: "{{< fa brands x >}}"
         href: https://x.com/himalayan_lynx
       - text: "{{< fa brands linkedin >}}"
         href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
