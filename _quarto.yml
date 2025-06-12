@@ -4,6 +4,7 @@ project:
 
 website:
   site-url: https://ilyaszarif.github.io
+  repo-url: "https://github.com/ilyaszarif/ilyaszarif.github.io"
   open-graph: true
   google-analytics:
     tracking-id: "G-9NCY9ZV6Z8"
@@ -12,30 +13,35 @@ website:
   navbar:
     title: false
     #logo: images/logo/logo.png
-    right:
+    left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: My Academic Identity
       - href: publications.qmd
         text: Publications
-
-      - text: "{{< fa brands github >}}"
-        href: https://github.com/ilyaszarif/ilyaszarif.github.io
-      - text: "{{< fa brands x >}}"
+   
+    right:
+      - text: "{{< iconify bi github title='GitHub' >}}"
+        href: https://github.com/ilyaszarif/
+      - text: "{{< iconify fa6-brands bluesky title='Bluesky' >}}"
+        href: https://bsky.app/profile/himalayanlynx.bsky.social
+        rel: me
+      - text: "{{< fa brands x title='X'>}}"
         href: https://x.com/himalayan_lynx
-      - text: "{{< fa brands linkedin >}}"
+      - text: "{{< fa brands linkedin title='LinkedIN' >}}"
         href: https://www.linkedin.com/in/muhammad-ilyas-b0b733251/
-      - text: "{{< fa brands researchgate >}}"
+      - text: "{{< fa brands researchgate title='ResearchGate' >}}"
         href: https://www.researchgate.net/profile/Muhammad-Ilyas-6
-      - text: "{{< fa brands orcid >}}"
+      - text: "{{< fa brands orcid title='ORCiD' >}}"
         href: https://orcid.org/0000-0002-9418-5442
-      - icon: envelope
-        href: mailto:ilyaszarif@gmail.com
+      - text: "{{< iconify bi envelope title='E-mail me' >}}"
+        href: "mailto:ilyaszarif@gmail.com"
   page-footer: 
     background: light
-    left: ©️ 2025, Muhammad Ilyas
+    left:  ©️ 2025, Muhammad Ilyas
     right: Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+    
 format:
   html:
     page-layout: full
